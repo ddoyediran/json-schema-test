@@ -15,3 +15,7 @@ app.use((error, req, res, next) => {
 
   return res.status(err.status || 500).json({ [key]: err });
 });
+
+app.listen(3000, () => {
+  console.log("App is running on port 3000");
+});
